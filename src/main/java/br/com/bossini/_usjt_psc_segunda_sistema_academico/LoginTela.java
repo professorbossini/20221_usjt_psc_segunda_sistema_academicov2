@@ -4,7 +4,7 @@
  */
 package br.com.bossini._usjt_psc_segunda_sistema_academico;
 
-import br.com.bossini._usjt_psc_segunda_sistema_academico.DAO.DAO_USUARIO;
+import br.com.bossini._usjt_psc_segunda_sistema_academico.DAO.UsuarioDAO;
 import javax.swing.JOptionPane;
 
 /**
@@ -102,7 +102,7 @@ public class LoginTela extends javax.swing.JFrame {
             //2. Pegar a senha que o usuário digitou
             String senha = new String(senhaPasswordField.getPassword());
             //3. Construir um objeto do tipo DAO
-            DAO_USUARIO dao = new DAO_USUARIO();
+            UsuarioDAO dao = new UsuarioDAO();
             //4. Construir um objeto do tipo Usuario
             Usuario u = new Usuario (login, senha);
             //5. Chamar o método existe passando a ele o objeto Usuario

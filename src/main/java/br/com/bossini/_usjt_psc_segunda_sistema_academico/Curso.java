@@ -19,6 +19,10 @@ public class Curso {
         this.nome = nome;
         this.tipo = tipo;
     }
+    
+    public Curso(String nome, String tipo){
+       this(0, nome, tipo);
+    }
 
     
     public int getId() {
@@ -44,8 +48,9 @@ public class Curso {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    
+
     public String toString(){
-        return "oi";
+        return String.format("%s - %s", nome, tipo);
     }
+    
 }

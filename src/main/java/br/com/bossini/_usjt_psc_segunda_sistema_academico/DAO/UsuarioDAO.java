@@ -17,12 +17,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class DAO_USUARIO {
+public class UsuarioDAO {
     
     public boolean existe (Usuario u) throws Exception{
         //1. Definir o comando SQL (SELECT)
         //placeholder: guardião de lugar
-        String sql = "SELECT * FROM tb_usuario WHERE nome=? AND senha=?";
+        String sql = "SELECT * FROM tb_usuario WHERE login=? AND senha=?";
         //2. Abrir uma conexão com o MySQL Server
         //estamos sujeitos à cláusula catch or declare
         //catch: significa tratar a exceção

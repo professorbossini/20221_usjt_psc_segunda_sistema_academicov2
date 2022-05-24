@@ -15,7 +15,7 @@ public class ConexaoBD {
     private static String porta = "3306";
     private static String db = "20221_usjt_psc_segunda_sistema_academico";
     private static String usuario = "root";
-    private static String senha = "25154417";
+    private static String senha = "1234";
     
     //1 tratamos a exceção (try/catch)
     //2 declarar a exceção (throws)
